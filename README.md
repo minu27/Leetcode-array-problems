@@ -36,6 +36,9 @@ class RemoveDuplicates {
 }
 ```
 
+> Input: nums = [1,1,2]
+> Output: Array size after removing duplicates is 2
+
 
 ## 2)	Best Time to Buy and Sell Stock II
 
@@ -84,6 +87,9 @@ public class StocksMaxProfit {
 }
 ```
 
+> Input: [1,2,3,4,5]
+> Output: Maximum Profit is 4
+
 ## 3)	Rotate Array
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.
@@ -115,6 +121,9 @@ public class RotateArray {
 }
 ```
 
+> Input: nums = [1,2,3,4,5,6,7], k = 3
+> Output: [5,6,7,1,2,3,4]
+
 ## 4)	Contains Duplicate
 
 Given an array of integers, find if the array contains any duplicates.
@@ -141,12 +150,15 @@ public class Duplicate {
         return duplicate;      
     }
     public static void main(String args[]){
-        int nums[] = {1,2,3,4,3,6,7};
+        int nums[] = {1,2,3,1};
         boolean ans = containsDuplicate(nums);
         System.out.println(ans);
     }
 }
 ```
+
+> Input: [1,2,3,1]
+> Output: true
 
 ## 5)	Single Number
 
@@ -176,9 +188,14 @@ public class SingleNumber {
         return s;
     }
     public static void main(String args[]){
-        int nums[] = {1};
+        int nums[] = {4,1,2,1,2};
         int single = singleNumber(nums);
         System.out.println(single);
     }
 }
 ```
+
+> Input: nums = [4,1,2,1,2]
+> Output: 4
+
+
