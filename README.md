@@ -6,6 +6,7 @@ Do not allocate extra space for another array, you must do this by modifying the
 
 In this problem, the key point to focus on is the input array being sorted. As far as duplicate elements are concerned, what is their positioning in the array when the given array is sorted? Look at the image above for the answer. If we know the position of one of the elements, do we also know the positioning of all the duplicate elements?
  
+```
 class RemoveDuplicates {
     public static int removeDuplicates(int[] nums) {
         int length = nums.length;
@@ -33,6 +34,8 @@ class RemoveDuplicates {
     }
 
 }
+```
+
 
 ## 2)	Best Time to Buy and Sell Stock II
 
@@ -41,6 +44,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
+```
 public class StocksMaxProfit {
     public static int maxProfit(int[] prices) {
         int length = prices.length;
@@ -78,11 +82,13 @@ public class StocksMaxProfit {
         System.out.println("Maximum Profit is "+prof);
     }
 }
+```
 
 ## 3)	Rotate Array
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.
 
+```
 import java.util.*; 
 public class RotateArray {
     public static int[] rotate(int[] nums, int k) {
@@ -107,6 +113,7 @@ public class RotateArray {
         System.out.println("Array after rotation: "+ Arrays.toString(n));
     }
 }
+```
 
 ## 4)	Contains Duplicate
 
@@ -114,6 +121,7 @@ Given an array of integers, find if the array contains any duplicates.
 
 Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
+```
 import java.util.HashMap; 
 public class Duplicate {
     public static boolean containsDuplicate(int[] nums) {
@@ -138,12 +146,13 @@ public class Duplicate {
         System.out.println(ans);
     }
 }
-
+```
 
 ## 5)	Single Number
 
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
+```
 import java.util.HashMap;
 public class SingleNumber {
     public static int singleNumber(int[] nums) {
@@ -172,3 +181,4 @@ public class SingleNumber {
         System.out.println(single);
     }
 }
+```
