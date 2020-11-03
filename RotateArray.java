@@ -1,25 +1,24 @@
 import java.util.*; 
 public class RotateArray {
     public static int[] rotate(int[] nums, int k) {
-        int length = nums.length;
-        int newarr[] = new int[length]; 
-        int j = length-k;
+       
+        int l = nums.length;
         
-        for(int i=0;i<k;i++){
-            newarr[i] = nums[j];
-            j++;
+        for (int j = 0; j < k; j++){
+            
+            int i, temp; 
+            temp = nums[l-1]; 
+            for (i = l-1; i > 0 ; i--) 
+                nums[i] = nums[i - 1]; 
+            nums[0] = temp;
         }
-        int y = 0;
-        for(int x = k; x<length; x++){
-            newarr[x] = nums[y];
-            y++;
-        }
-        return newarr;
+        
+        return nums;
     }
     public static void main(String args[]){
         int nums[] = {1,2,3,4,5,6,7};
         int k = 3;
-        int newarr[] = rotate(nums,k);
-        System.out.println("Array after rotation: "+ Arrays.toString(newarr));
+        int n[] = rotate(nums,k);
+        System.out.println("Array after rotation: "+ Arrays.toString(n));
     }
 }
