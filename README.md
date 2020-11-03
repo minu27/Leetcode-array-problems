@@ -37,6 +37,7 @@ class RemoveDuplicates {
 ```
 
 > Input: nums = [1,1,2]
+
 > Output: Array size after removing duplicates is 2
 
 
@@ -88,6 +89,7 @@ public class StocksMaxProfit {
 ```
 
 > Input: [1,2,3,4,5]
+
 > Output: Maximum Profit is 4
 
 ## 3)	Rotate Array
@@ -122,6 +124,7 @@ public class RotateArray {
 ```
 
 > Input: nums = [1,2,3,4,5,6,7], k = 3
+
 > Output: [5,6,7,1,2,3,4]
 
 ## 4)	Contains Duplicate
@@ -158,6 +161,7 @@ public class Duplicate {
 ```
 
 > Input: [1,2,3,1]
+
 > Output: true
 
 ## 5)	Single Number
@@ -196,6 +200,7 @@ public class SingleNumber {
 ```
 
 > Input: nums = [4,1,2,1,2]
+
 > Output: 4
 
 
